@@ -1,0 +1,543 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-image: linear-gradient(#b8e3f8, #9ef7e9); }
+
+p {
+  color: #343838;
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto; }
+
+.negrita {
+  font-weight: bolder; }
+
+h1 {
+  text-align: center;
+  font-family: "Raleway", serif;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  font-style: italic; }
+
+h2 {
+  text-align: center;
+  font-family: "Raleway", serif;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 80px; }
+
+h3 {
+  text-align: center;
+  font-family: "Raleway", serif;
+  letter-spacing: 2px;
+  padding-top: 50px;
+  padding-bottom: 80px; }
+
+h5, h6 {
+  color: black;
+  font-family: "Raleway", serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2px; }
+
+h6 {
+  font-weight: 90;
+  letter-spacing: 0.5px; }
+
+#subrayadoTitulo {
+  text-decoration-line: underline overline;
+  text-decoration-style: solid;
+  text-decoration-color: #3399a7; }
+
+li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+label {
+  font-family: "Raleway", sans-serif; }
+
+.colorPrincipal {
+  color: #343838; }
+
+#borderContacto {
+  border-right: none; }
+
+.borderConsulta {
+  padding: 30px 0px 30px 0px;
+  border-top: solid 4px transparent;
+  border-right: solid 4px transparent;
+  border-bottom: solid 4px transparent;
+  border-left: solid 4px transparent; }
+
+#posicionHorario {
+  position: relative;
+  left: 250px; }
+
+.aside {
+  display: flex;
+  flex-direction: row; }
+
+.padingProfesores {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px; }
+
+.padingNosotros {
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #5ac5c5;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  padding-left: 115px; }
+
+/*PARA CELULAR*/
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "box1" "box2" "box3"; }
+  #box1 {
+    grid-area: box1; }
+  #box2 {
+    grid-area: box2; }
+  #box3 {
+    grid-area: box3; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "area1" "area2"; }
+  #area1 {
+    grid-area: area1; }
+  #area2 {
+    grid-area: area2; }
+  #carrusel {
+    padding-top: 10px;
+    padding-bottom: 50PX; }
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky; }
+    .nav .nav__lista {
+      display: flex;
+      flex-direction: column;
+      height: 160px;
+      background-color: transparent; }
+    .nav .nav__item {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .nav .nav__link {
+      color: black; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px; }
+    .footer .footer__caja .footer__img {
+      width: 50px;
+      height: 50px;
+      position: relative;
+      left: 15px; }
+    .footer .footer__caja .footer__titulo {
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .caja .caja__img {
+      padding: 0px 100px 50px 0px;
+      width: 200px; }
+    .caja .caja__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .caja .caja__div .caja__texto {
+        width: 100px;
+        font-size: 30px; }
+      .caja .caja__div .caja__form .caja__input {
+        width: 300px; }
+      .caja .caja__div .caja__form .caja__consulta {
+        width: 300px; }
+      .caja .caja__div .caja__form .caja__boton {
+        width: 200px; }
+  .profBox {
+    padding: 0px 0px 0px 0px; }
+    .profBox .profBox__titulo {
+      font-family: "Raleway", serif; }
+    .profBox .profBox__area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #e0dddd; }
+      .profBox .profBox__area .profBox__img {
+        padding-right: 0px;
+        padding-left: 15px;
+        width: 350px;
+        height: 400px;
+        text-align: center; }
+      .profBox .profBox__area .profBox__area--color {
+        background-color: none; }
+      .profBox .profBox__area .profBox__colum {
+        padding-right: 0px;
+        padding-left: 0px; }
+        .profBox .profBox__area .profBox__colum .profBox__nombre {
+          padding-top: 20px;
+          color: black; }
+        .profBox .profBox__area .profBox__colum .profBox__texto {
+          padding-right: 10px;
+          padding-left: 10px; }
+  .comentario .comentario__titulo {
+    font-size: 30px;
+    padding-top: 50px; }
+  .comentario .comentario__div .comentario__caja {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e2f7f4; }
+    .comentario .comentario__div .comentario__caja .comentario__nombre {
+      font-size: 30px; }
+    .comentario .comentario__div .comentario__caja .comentario__texto {
+      padding: 50px 10px 10px 10px; } }
+
+/*PARA TABLET SUPUESTAMENTE*/
+@media only screen and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "box1" "box2" "box3"; }
+  #box1 {
+    grid-area: box1; }
+  #box2 {
+    grid-area: box2; }
+  #box3 {
+    grid-area: box3; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "area1" "area2"; }
+  #area1 {
+    grid-area: area1; }
+  #area2 {
+    grid-area: area2; }
+  .p {
+    padding: 30px 30px 10px 50px; }
+  .primerImagen {
+    position: relative;
+    left: 20%; }
+  section {
+    padding-top: 90px;
+    padding-bottom: 90px; }
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky; }
+    .nav .nav__lista {
+      display: flex;
+      flex-direction: column;
+      height: 160px;
+      background-color: transparent; }
+    .nav .nav__item {
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .nav .nav__link {
+      color: black; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 100px; }
+    .footer .footer__caja .footer__img {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      left: 15px; }
+    .footer .footer__caja .footer__titulo {
+      font-size: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .caja .caja__img {
+      padding: 0px 100px 50px 0px;
+      width: 200px; }
+    .caja .caja__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .caja .caja__div .caja__texto {
+        width: 100px;
+        font-size: 20px; }
+      .caja .caja__div .caja__form .caja__input {
+        width: 300px; }
+      .caja .caja__div .caja__form .caja__consulta {
+        width: 300px; }
+      .caja .caja__div .caja__form .caja__boton {
+        width: 200px; }
+  .profBox {
+    padding: 0px 0px 0px 0px; }
+    .profBox .profBox__titulo {
+      font-family: "Raleway", serif; }
+    .profBox .profBox__area {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #e0dddd; }
+      .profBox .profBox__area .profBox__img {
+        padding-right: 80px;
+        padding-left: 80px;
+        width: 600px;
+        height: 600px; }
+      .profBox .profBox__area .profBox__area--color {
+        background-color: none; }
+      .profBox .profBox__area .profBox__colum {
+        padding-right: 0px;
+        padding-left: 0px; }
+        .profBox .profBox__area .profBox__colum .profBox__nombre {
+          padding-top: 20px;
+          color: black; }
+        .profBox .profBox__area .profBox__colum .profBox__texto {
+          padding-right: 50px;
+          padding-left: 50px; }
+  .comentario .comentario__titulo {
+    font-size: 30px;
+    padding-top: 50px; }
+  .comentario .comentario__div .comentario__caja {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e2f7f4; }
+    .comentario .comentario__div .comentario__caja .comentario__nombre {
+      font-size: 30px; }
+    .comentario .comentario__div .comentario__caja .comentario__texto {
+      padding: 50px 10px 10px 10px; } }
+
+/*PARA COMPUTADORA*/
+@media only screen and (min-width: 950px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "box1" "box2" "box3"; }
+  #box1 {
+    grid-area: box1; }
+  #box2 {
+    grid-area: box2; }
+  #box3 {
+    grid-area: box3; }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "area1" "area2"; }
+  #area1 {
+    grid-area: area1; }
+  #area2 {
+    grid-area: area2; }
+  .primerImagen {
+    position: relative;
+    left: 30%; }
+  .p {
+    padding: 50px 30px 10px 50px; }
+  section {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-bottom: 100px; }
+  #padingAside {
+    padding-left: 100px;
+    padding-right: 800px;
+    position: relative;
+    left: 700px; }
+  #carrusel {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky; }
+    .nav .nav__lista {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      background-color: transparent; }
+    .nav .nav__item {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 30px 90px 20px 90px; }
+    .nav .nav__link {
+      color: black; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    background-color: #a8a6a6;
+    padding-bottom: 20px; }
+    .footer .footer__caja .footer__img {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center; }
+  .caja {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .caja .caja__img {
+      padding: 0px 100px 50px 0px; }
+    .caja .caja__div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .caja .caja__div .caja__texto {
+        width: 800px; }
+      .caja .caja__div .caja__form .caja__input {
+        width: 800px; }
+      .caja .caja__div .caja__form .caja__consulta {
+        width: 800px; }
+      .caja .caja__div .caja__form .caja__boton {
+        width: 200px; }
+  .profBox {
+    padding: 0px 0px 0px 0px; }
+    .profBox .profBox__titulo {
+      font-family: "Raleway", serif; }
+    .profBox .profBox__area {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: #e0dddd; }
+      .profBox .profBox__area .profBox__img {
+        padding-right: 60px;
+        padding-left: 60px;
+        height: 600px; }
+      .profBox .profBox__area .profBox__area--color {
+        background-color: none; }
+      .profBox .profBox__area .profBox__colum {
+        padding-right: 80px;
+        padding-left: 80px; }
+        .profBox .profBox__area .profBox__colum .profBox__nombre {
+          padding-top: 20px;
+          color: black; }
+        .profBox .profBox__area .profBox__colum .profBox__texto {
+          padding-right: 30px; }
+  .comentario .comentario__titulo {
+    font-size: 30px;
+    padding-top: 50px; }
+  .comentario .comentario__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10px 30px 10px; }
+    .comentario .comentario__div .comentario__caja {
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #e2f7f4;
+      width: 550px;
+      height: 300px; }
+      .comentario .comentario__div .comentario__caja .comentario__nombre {
+        font-size: 30px; }
+      .comentario .comentario__div .comentario__caja .comentario__texto {
+        padding: 50px 10px 10px 10px; } }
+
+.galeria:hover {
+  transform: translate(50px, 50px); }
+
+.escala:hover {
+  transform: scale(0.9, 0.9); }
+
+input:hover {
+  transition: all 0.5s;
+  width: 200px;
+  font-size: 15px; }
+
+@keyframes unEfecto {
+  form {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+#animacionLogo {
+  animation-name: unEfecto;
+  animation-duration: 1.5s;
+  width: 150px;
+  height: 150px;
+  padding-bottom: 10px; }
+
+.cajaNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.input {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 0.5fr 0.5fr 3fr 0.5fr;
+  grid-row-gap: 10px;
+  grid-template-areas: "input1" "input2" "input3" "input4"; }
+
+#input1 {
+  grid-area: label1; }
+
+#input2 {
+  grid-area: label2; }
+
+#input3 {
+  grid-area: label3; }
+
+#input4 {
+  grid-area: label4; }
+  #input4 .input__caja {
+    background-color: aquamarine; }
+
+.padding {
+  padding-top: 80px; }
+
+.cont {
+  background-image: url("../imagenes/horario.jpeg");
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .cont .cont__caja {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black; }
+  .cont .cont__texto {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: black; }
