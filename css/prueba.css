@@ -3,7 +3,11 @@ body {
   padding: 0; }
 
 header {
-  background-image: linear-gradient(#b8e3f8, #9ef7e9); }
+  background-color: white;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0; }
 
 p {
   color: #343838;
@@ -18,12 +22,19 @@ p {
 .negrita {
   font-weight: bolder; }
 
+/*
+h1{
+    @include titulos (70px, 300 , $colorTitulo);
+    font-style: italic;
+}
+*/
 h1 {
-  text-align: center;
+  color: rgba(11, 125, 160, 0.863);
   font-family: "Raleway", serif;
+  text-align: center;
   letter-spacing: 2px;
-  padding-top: 50px;
-  font-style: italic; }
+  font-size: 60px;
+  padding-top: 100px; }
 
 h2 {
   text-align: center;
@@ -33,11 +44,12 @@ h2 {
   padding-bottom: 80px; }
 
 h3 {
-  text-align: center;
+  color: "Raleway", sans-serif;
   font-family: "Raleway", serif;
-  letter-spacing: 2px;
-  padding-top: 50px;
-  padding-bottom: 80px; }
+  text-align: center;
+  letter-spacing: 1.5px;
+  padding-top: 100px;
+  padding-bottom: 50px; }
 
 h5, h6 {
   color: black;
@@ -45,8 +57,7 @@ h5, h6 {
   text-align: center;
   letter-spacing: 2px;
   font-weight: 100;
-  text-align: center;
-  letter-spacing: 2px; }
+  text-align: center; }
 
 h6 {
   font-weight: 90;
@@ -381,8 +392,7 @@ label {
     padding-right: 0px; }
   .nav {
     padding-top: 10px;
-    padding-bottom: 10px;
-    position: sticky; }
+    padding-bottom: 10px; }
     .nav .nav__lista {
       display: flex;
       flex-direction: row;
@@ -394,81 +404,86 @@ label {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       padding: 30px 90px 20px 90px; }
     .nav .nav__link {
-      color: black; }
-  .footer {
+      color: black; } }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  background-color: #a8a6a6;
+  padding-bottom: 20px; }
+  .footer .footer__caja .footer__img {
+    width: 60px;
+    height: 60px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 30px;
-    background-color: #a8a6a6;
-    padding-bottom: 20px; }
-    .footer .footer__caja .footer__img {
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center; }
-  .caja {
+    align-items: center; }
+
+.caja {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .caja .caja__img {
+    padding: 0px 100px 50px 0px; }
+  .caja .caja__div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between; }
-    .caja .caja__img {
-      padding: 0px 100px 50px 0px; }
-    .caja .caja__div {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; }
-      .caja .caja__div .caja__texto {
-        width: 800px; }
-      .caja .caja__div .caja__form .caja__input {
-        width: 800px; }
-      .caja .caja__div .caja__form .caja__consulta {
-        width: 800px; }
-      .caja .caja__div .caja__form .caja__boton {
-        width: 200px; }
-  .profBox {
-    padding: 0px 0px 0px 0px; }
-    .profBox .profBox__titulo {
-      font-family: "Raleway", serif; }
-    .profBox .profBox__area {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      background-color: #e0dddd; }
-      .profBox .profBox__area .profBox__img {
-        padding-right: 60px;
-        padding-left: 60px;
-        height: 600px; }
-      .profBox .profBox__area .profBox__area--color {
-        background-color: none; }
-      .profBox .profBox__area .profBox__colum {
-        padding-right: 80px;
-        padding-left: 80px; }
-        .profBox .profBox__area .profBox__colum .profBox__nombre {
-          padding-top: 20px;
-          color: black; }
-        .profBox .profBox__area .profBox__colum .profBox__texto {
-          padding-right: 30px; }
-  .comentario .comentario__titulo {
-    font-size: 30px;
-    padding-top: 50px; }
-  .comentario .comentario__div {
+    .caja .caja__div .caja__texto {
+      width: 800px; }
+    .caja .caja__div .caja__form .caja__input {
+      width: 800px; }
+    .caja .caja__div .caja__form .caja__consulta {
+      width: 800px; }
+    .caja .caja__div .caja__form .caja__boton {
+      width: 200px; }
+
+.profBox {
+  padding: 0px 0px 0px 0px; }
+  .profBox .profBox__titulo {
+    font-family: "Raleway", serif; }
+  .profBox .profBox__area {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 100px 10px 30px 10px; }
-    .comentario .comentario__div .comentario__caja {
-      padding-left: 20px;
-      padding-right: 20px;
-      background-color: #e2f7f4;
-      width: 550px;
-      height: 300px; }
-      .comentario .comentario__div .comentario__caja .comentario__nombre {
-        font-size: 30px; }
-      .comentario .comentario__div .comentario__caja .comentario__texto {
-        padding: 50px 10px 10px 10px; } }
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #e0dddd; }
+    .profBox .profBox__area .profBox__img {
+      padding-right: 60px;
+      padding-left: 60px;
+      height: 600px; }
+    .profBox .profBox__area .profBox__area--color {
+      background-color: none; }
+    .profBox .profBox__area .profBox__colum {
+      padding-right: 80px;
+      padding-left: 80px; }
+      .profBox .profBox__area .profBox__colum .profBox__nombre {
+        padding-top: 20px;
+        color: black; }
+      .profBox .profBox__area .profBox__colum .profBox__texto {
+        padding-right: 30px; }
+
+.comentario .comentario__titulo {
+  font-size: 30px;
+  padding-top: 50px; }
+
+.comentario .comentario__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 10px 30px 10px; }
+  .comentario .comentario__div .comentario__caja {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e2f7f4;
+    width: 550px;
+    height: 300px; }
+    .comentario .comentario__div .comentario__caja .comentario__nombre {
+      font-size: 30px; }
+    .comentario .comentario__div .comentario__caja .comentario__texto {
+      padding: 50px 10px 10px 10px; }
 
 .galeria:hover {
   transform: translate(50px, 50px); }
