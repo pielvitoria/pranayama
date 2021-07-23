@@ -10,7 +10,7 @@ header {
   top: 0; }
 
 p {
-  color: #343838;
+  color: black;
   font-family: "Raleway", sans-serif;
   text-align: justify;
   letter-spacing: 0.5px;
@@ -102,7 +102,7 @@ label {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   text-align: center;
-  color: #5ac5c5;
+  color: #0e5a5a;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px; }
