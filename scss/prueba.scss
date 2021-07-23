@@ -10,7 +10,6 @@
 
 header{
  background-color: white;
- //display: flex;
  position: fixed;
  right: 0;
  left: 0;
@@ -43,12 +42,7 @@ p{
 
 
 }
-/*
-h1{
-    @include titulos (70px, 300 , $colorTitulo);
-    font-style: italic;
-}
-*/
+
 h1{
     color: $colorTitulo;
     font-family: $tituloFont;
@@ -63,8 +57,8 @@ h1{
     padding-bottom: 80px;      
     
 }
+
 h3{
-    //@include titulos (30px, 60, black);
     color: $contenidoFont;
     font-family: $tituloFont;
     text-align: center;
@@ -668,6 +662,7 @@ label{
         }
         .nav__link{
             color: black;
+
            
         }
 
@@ -919,7 +914,10 @@ padding-top: 80px;
 }
 
 
-
+.imageFondo{
+    background-image: url("../imagenes/tapete.jpeg");
+    background-attachment: fixed;
+}
 
 
 

@@ -22,12 +22,6 @@ p {
 .negrita {
   font-weight: bolder; }
 
-/*
-h1{
-    @include titulos (70px, 300 , $colorTitulo);
-    font-style: italic;
-}
-*/
 h1 {
   color: rgba(11, 125, 160, 0.863);
   font-family: "Raleway", serif;
@@ -556,3 +550,7 @@ input:hover {
     font-family: "Raleway", sans-serif;
     font-size: 30px;
     color: black; }
+
+.imageFondo {
+  background-image: url("../imagenes/tapete.jpeg");
+  background-attachment: fixed; }
