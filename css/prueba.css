@@ -554,3 +554,7 @@ input:hover {
 .imageFondo {
   background-image: url("../imagenes/tapete.jpeg");
   background-attachment: fixed; }
+
+.carrusel {
+  margin: 0 !important;
+  padding: 0 !important; }

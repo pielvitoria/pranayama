@@ -11,34 +11,45 @@
     <meta name="Keywords" content="Yoga espiritual, clases de yoga, chamanismo">
 </head>
 <body id="grilla">
-    <header > 
-
-
-      <div class="cajaNav">
-        
-        <img id="animacionLogo" src="imagenes/logo2.jpg" alt="">
-
-        <nav class="nav">
-            <ul class="nav__lista" >
-                <li class="nav__item"> 
-                  <a class="nav__link" href="index.html">INICIO</a>
-                </li>
-                <li class="nav__item">
-                   <a class="nav__link" href="secciones/nosotros.html">NOSOTROS</a>
+    <header class="zindex"> 
+      
+        <nav class="navbar navbar-light bg-light fixed-top">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> PRANAYAMA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
-                <li class="nav__item" > 
-                  <a class="nav__link" href="secciones/galeria.html">GALERIA</a>
-                </li> 
-                <li class="nav__item"> 
-                  <a class="nav__link" href="secciones/horario.html">HORARIO</a>
-                </li>
-                <li class="nav__item"> 
-                  <a class="nav__link" href="secciones/contacto.html">CONTACTO</a>
-                </li> 
-            
-
-            </ul>
-    
+                  <li class="nav-item">
+                    <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="secciones/galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="secciones/horario.html">Horarios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="secciones/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </div>
         </nav>
     </div>
     </header>
@@ -46,7 +57,7 @@
     <main>
        <section >
             <article> 
-            <div id="carrusel">
+            <div class="carrusel">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -255,6 +266,7 @@
 
     <footer class="footer" >
        <div class="footer__caja">
+      
          <img class="footer__img" src="imagenes/facebook.png" alt="">
          
          </div>

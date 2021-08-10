@@ -919,6 +919,13 @@ padding-top: 80px;
     background-attachment: fixed;
 }
  
+.carrusel {
+    margin: 0 !important;
+    padding:0 !important;
+ }
 
-
+.zindex{
+    position: relative !important; 
+    z-index: 1000  !important; 
+}
 
